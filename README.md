@@ -4,7 +4,7 @@ a Voron Zero mod to add Independent Dual Extrusion (IDEX).  "X0" for short.  **N
 
 **X0** adds a second printhead to a [V0](https://vorondesign.com/voron0.1) to enable multi-color prints, multi-material prints, and even overhangs atop dissolvable supports.  
 
-*This repo includes everything you need to build your own X0, including CAD and STLs for printed parts, DXFs for panels, a list of parts, and a sample Klipper config.*  [.STEP on GDrive](https://drive.google.com/file/d/1z7M9BupEa8Yf2aHav9-PRX_ygqWzFN_K/view?usp=sharing) (exceeds GitHub's file-size limit).
+*This repo includes everything you need to build your own X0, including CAD and STLs for printed parts, DXFs for panels, a list of parts, and a sample Klipper config.*  The .STEP file is now in the repo too.
 
 ## Alpha-1 Release 2021-12-31
 
