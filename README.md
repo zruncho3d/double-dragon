@@ -8,7 +8,7 @@ a Voron Zero mod to add Independent Dual Extrusion (IDEX).  "X0" for short.  **N
 
 ## Alpha-1 Release 2021-12-31
 
-![front](Renders/alpha-1/front2.png)
+![front](Renders/alpha-1/front2.PNG)
 
 ![top](Renders/alpha-1/top3.png)
 
@@ -220,9 +220,9 @@ But DD could mean Direct Drive, so just call it X0 for short.
 ### Credits
 
 * **@eddietheengineer**
- * [Eddie's IDEX walkthrough video](https://www.youtube.com/watch?v=31fqpKYj7v4) is *the reason this mod exists*.  Watch it.  It lays out the approach of modifying a CoreXY printer to add a second extruder, without moving the belt paths. If a V0 is your lego kit, this is a new model you can build by combining two of the same set.
- * [Tridex](https://github.com/FrankenVoron/Tridex/) is the cleanest and most awesome IDEX I’ve seen.  9 steppers?!?  Yeah.  Squint.. and Double Dragon may look just like this, in combination with the [Tri-Zero mod](https://github.com/zruncho3d/tri-zero).
- * [Doom IDEX](https://github.com/FrankenVoron/IDEX) - a preceding Voron IDEX.
+  * [Eddie's IDEX walkthrough video](https://www.youtube.com/watch?v=31fqpKYj7v4) is *the reason this mod exists*.  Watch it.  It lays out the approach of modifying a CoreXY printer to add a second extruder, without moving the belt paths. If a V0 is your lego kit, this is a new model you can build by combining two of the same set.
+  * [Tridex](https://github.com/FrankenVoron/Tridex/) is the cleanest and most awesome IDEX I’ve seen.  9 steppers?!?  Yeah.  Squint.. and Double Dragon may look just like this, in combination with the [Tri-Zero mod](https://github.com/zruncho3d/tri-zero).
+  * [Doom IDEX](https://github.com/FrankenVoron/IDEX) - a preceding Voron IDEX.
 * **@nemgrea** This mod is probably 85-90% unmodified V0 content, so nemgrea gets a ton of credit for driving the V0 design here.  The Y blocks are chopped V0 AB blocks.  If it ain’t broke, don’t fix it.  Or, fix it until it’s broken… which one is it again?
 * **@ankurv** A badass [SSwitchwire IDEX](https://www.youtube.com/watch?v=k3Mkut2jhwM) and long conversation provided motivation.
 * **@hartk1213**  The carriages derive from [hartk's MGN9C mod](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_MGN9C_X_Axis).
