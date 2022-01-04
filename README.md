@@ -6,6 +6,13 @@ a Voron Zero mod to add Independent Dual Extrusion (IDEX).  "X0" for short.  **N
 
 *This repo includes everything you need to build your own X0, including CAD and STLs for printed parts, DXFs for panels, a list of parts, and a sample Klipper config.*  The .STEP file is now in the repo too.
 
+![front](Renders/alpha-1/front2.PNG)
+
+## Updates
+* **2022-01-02** First multi-extruder prints!  See the alternating-copper-and-brass print below.
+* **2022-01-01** See [this Reddit discussion](https://www.reddit.com/r/VORONDesign/comments/ru64ti/idex_v0_bad_idea_or_terrible_idea/) for reactions to the concept: bad idea, or terrible idea?
+* **2021-12-31** Initial alpha-1 release!  This one was fun.  Came together quickly, too.
+
 ## Alpha-1 Release 2021-12-31
 
 ![front](Renders/alpha-1/front2.PNG)
@@ -24,6 +31,10 @@ a Voron Zero mod to add Independent Dual Extrusion (IDEX).  "X0" for short.  **N
 
 ![top](Images/alpha-1/top.jpg)
 
+Sample print with two extruders in one part, with brass and copper PLA.
+
+![alternating](Images/Prints/alternating_colors.png)
+
 Videos coming soon.
 
 ### Fun parts
@@ -39,10 +50,6 @@ Videos coming soon.
 ![Cable Channel End](Renders/alpha-1/cable_channel_end.png)
 
 ![Y Belt Attachment](Renders/alpha-1/y_belt_attachment.png)
-
-
-## Changelog
-* 2021-12-31 Initial alpha-1 release!  This one was fun.  Came together quickly, too.
 
 ## I'm interested. What do I need to do?
 
@@ -67,15 +74,15 @@ The panel order looks like this, from SendCutSend:
 
 #### Add more drives!
 This mod uses two Y motors for simplicity in a `hybrid-corexy` config.  You'll need:
-* **Belts** - +N 6mm-width GT2 belt; can reuse your now-too-short belts on the Y drives.
-* **Pulleys** - +2 20-tooth GT2
-* **Endstops** - +2 Omron D2F switches
-* **Bearings** - +28 F623 bearings (sorry for the number... had to fit the existing V0 footprint)
-* **Motors** - +2 NEMA14 for the Y drives.  If using full-length 48mm+ motors, an Octopus will not fit the provided mount, but a Spider will.  V0.0-stock motors are shorter and will fit.
-* **M3 Screws** - Yes, all BHCS; includes at least M3x6, M3x8, M3x10, M3x12, M3x16, M3x20, M3x25.
-* **M3 Nuts** - Yes
-* **M3 Heatsets** - Yes
-* **M3 Washers** - Yes
+* **Belts**: +N 6mm-width GT2 belt; can reuse your now-too-short belts on the Y drives.
+* **Pulleys**: +2 20-tooth GT2
+* **Endstops**: +2 Omron D2F switches
+* **Bearings**: +28 F623 bearings (sorry for the number... had to fit the existing V0 footprint)
+* **Motors**: +2 NEMA14 for the Y drives.  If using full-length 48mm+ motors, an Octopus will not fit the provided mount, but a Spider will.  V0.0-stock motors are shorter and will fit.
+* **M3 Screws**: Yes, all BHCS; includes at least M3x6, M3x8, M3x10, M3x12, M3x16, M3x20, M3x25.
+* **M3 Nuts**: Yes
+* **M3 Heatsets**: Yes
+* **M3 Washers**: Yes
 
 Note, parts above are *just* for drives, not for the toolhead.  Those will add to the bill of materials.
 
@@ -158,7 +165,7 @@ Good question.
 
 If you keep a V0 120x120 bed, then _most_ of the V0 printable size remains.  The V0.1 MiniAB is 53mm and the added travel is 50mm… so one carriage would hit the other at 3mm from the build-plate edge.  That means you can print a single part with two materials or colors, up to 114mm in X and ~120mm in Y.  Great!
 
-But remember: toolheads can’t touch.  So in mirror mode (which requires toolhead height adjustment; not impleemnted yet), you lose that 53mm between nozzles, yielding 2 parts at 33.5mm x 120mm.  In Duplication mode, you get the space divided by two, up to the toolhead edge - 60mm x 120mm for each part.  Much better.
+But remember: toolheads can’t touch.  So in mirror mode (which requires toolhead height adjustment; not implemented yet), you lose that 53mm between nozzles, yielding 2 parts at 33.5mm x 120mm.  In Duplication mode, you get the space divided by two, up to the toolhead edge - 60mm x 120mm for each part.  Much better.
 
 But what if you go with a larger bed?
 
@@ -194,15 +201,15 @@ Here’s a starter list of useful contributions.  PRs welcome!
 
 ### Questions.  Where?
 
-Look at the render and CAD first.  After that?  TBD.  
+Project development and updates live in the ```#double-dragon``` channel in the [DoomCube Discord](https://discord.gg/doomcube).
 
-This project is looking for the right home, so that people can ask questions, keep up with updates, and learn from the past questions.
-
-In the meantime, you can find @zruncho in the [DoomCube Discord](https://discord.gg/doomcube).
+Feel free to report issues as GitHub issues!  Makes them easier to track.
 
 **What am I seeing in the pictures?  That doesn't match the CAD.**
 
-Good eye.  No V0 mods are assumed here, but X0.000 in the pics has a few tweaks:
+Good eye.  You can modify a stock V0.1 with the mods listed above and you'll see something like the renders, but the images are a bit different.
+
+X0.000 in the pics has a few tweaks to a stock V0.1, in addition to Double Dragon-specific mods:
 
 * MCMBen's [Block-and-Tackle Z for V0](https://github.com/Fleafa/VoronUsers/blob/master/printer_mods/MCMBen/Voron0_Block_and_Tackle_Z_Belt/STLs/%5Ba%5D_tensioner_v1.stl)
 * 2x Custom Rotating Spool holders
@@ -224,7 +231,7 @@ But DD could mean Direct Drive, so just call it X0 for short.
   * [Tridex](https://github.com/FrankenVoron/Tridex/) is the cleanest and most awesome IDEX I’ve seen.  9 steppers?!?  Yeah.  Squint.. and Double Dragon may look just like this, in combination with the [Tri-Zero mod](https://github.com/zruncho3d/tri-zero).
   * [Doom IDEX](https://github.com/FrankenVoron/IDEX) - a preceding Voron IDEX.
 * **@nemgrea** This mod is probably 85-90% unmodified V0 content, so nemgrea gets a ton of credit for driving the V0 design here.  The Y blocks are chopped V0 AB blocks.  If it ain’t broke, don’t fix it.  Or, fix it until it’s broken… which one is it again?
-* **@ankurv** A badass [SSwitchwire IDEX](https://www.youtube.com/watch?v=k3Mkut2jhwM) and long conversation provided motivation.
+* **@ankurv** A badass [Switchwire IDEX](https://www.youtube.com/watch?v=k3Mkut2jhwM) and long conversation provided motivation.
 * **@hartk1213**  The carriages derive from [hartk's MGN9C mod](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_MGN9C_X_Axis).
 
 ### Project Timeline
