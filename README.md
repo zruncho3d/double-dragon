@@ -62,7 +62,7 @@ You'll need a second toolhead.
 * Anything that changes the X carriage will NOT work, such as the [Mini After-LGX-lite](https://www.bondtech.se/2021/12/27/voron-v0-1-toolhead-setup-for-lgx-lite/), at least until any changes are ported over.
 
 #### Widen all the things!
-* **100mm-wider extrusions** - 4x 300mm; [MakerBeamXL](https://www.amazon.com/MakerBeam-300mm-beam-black-anodised/dp/B00G2DNU4M), Misumi, or whatever you prefer.  Or, keep the colorful extrusions from a kit and augment with 8x 50mm extensions, joined by M3 threaded rods, 3mm shafts, or long M3 screws.
+* **100mm-wider extrusions** - 4x 300mm; [MakerBeamXL](https://www.amazon.com/MakerBeam-XL-Anodized-300x15x15mm-Pieces/dp/B06XJ5G5QY), Misumi, or whatever you prefer.  Or, keep the colorful extrusions from a kit and augment with 8x 50mm extensions, joined by M3 threaded rods, 3mm shafts, or long M3 screws.
 * **100mm-longer X rail (250mm)** - a medium preload MGN9 rail with two MGN9C carriages is recommended, as it reduces the potential for toolhead wobble.  Ask the seller for medium preload at purchase time and ask them to put both carriages on the rail.  Make sure to order two carriages!  [CNA rail and carriages on AliExpress](https://www.aliexpress.com/item/32773296501.html?spm=a2g0s.12269583.0.0.4ea2494dwPIVR2)
 * **100mm-plus wider bed (optional)** - see notes below.
 * **100mm-wider panels (optional)** - see DXFs folder and image below.  You can ignore these if the printer is unenclosed, or you can make printed 50-mm-wide shim parts, possibly with a nice accent color.  The tophat panels are a bit harder to extend, but you could shim these too, potentially.
